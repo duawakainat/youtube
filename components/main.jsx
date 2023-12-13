@@ -92,7 +92,7 @@ export default function Main(props) {
    
     return(
       <div>
-        <div className='grid grid-cols-4 border-1 border-t-gray-100 fixed z-50 bottom-0 right-0 left-0 text-center bg-white leading-12 font-mono'>
+        <div className='grid grid-cols-4 max-[640px]:grid-cols-4 flex items-center border-1 lg:hidden border-t-gray-100 fixed z-50 bottom-0 right-0 left-0 text-center bg-white leading-12 font-mono'>
       {menuItem.map(({icon:Icon, ...menu})=>{
         const classes= getNavItemClasess(menu);
 return <div key={menu.id} className={classes}>

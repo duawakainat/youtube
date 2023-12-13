@@ -1,7 +1,7 @@
 import Tag from "./Tag";
 import Image from 'next/image'
 import '../app/globals.css'
-import data from './Button.json'
+import data from './button.json'
 import { useState, useRef } from "react";
 import gsap from "gsap";
 export default function Video(props) {
