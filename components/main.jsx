@@ -54,7 +54,7 @@ export default function Main(props) {
    // let mqsl=window.matchMedia("(max-width: 1200px)")
   
    const wrapperClesses = classNames(
-     "h-screen px-4 pt-4 flex justify-between flex-col flex-row lg:block hidden md:hidden sm:hidden max-[630px]:hidden",
+     "h-screen px-4 pt-4 flex justify-between flex-col flex-row items-center  lg:block hidden md:hidden sm:hidden max-[630px]:hidden",
      {  ["w-60"]: !toogleCallapse, ["w-20"]: toogleCallapse}
     );
     
@@ -217,7 +217,7 @@ return <div key={menu.id} className={classes}>
                         
                           {toogleCallapse && (
                             // <Link/>
-                            <div style={{height: '74px'}}  >
+                            <div className='flex items-center' style={{height: '74px'}}  >
                             <Link href={menu.link}>
                               <Icon style={{width: "1.5rem",height: "1.5rem"}}></Icon>
                               <span className={classNames('text-[10px] font-medium text-text-light')}>
@@ -225,7 +225,7 @@ return <div key={menu.id} className={classes}>
                           )}
                         <div  >
                         {!toogleCallapse && (
-                       <div className='px-3 flex' style={{height: '40px'}}>   <div style={{width: '48px'}}><Icon style={{width: "1.5rem"}}/></div>
+                       <div className='px-3 flex items-center' style={{height: '40px'}}>   <div style={{width: '48px'}}><Icon style={{width: "1.5rem"}}/></div>
                             <span className={classNames('text-sm font-medium text-text-light')}>
                                 {menu.Label}
                             </span></div>
@@ -258,7 +258,7 @@ return <div key={menu.id} className={classes}>
                     <div className="flex px-3 w-full h-full">
                     {!toogleCallapse && (
                            
-                        <div style={{width: '48px'}}>
+                        <div className='flex items-center' style={{width: '48px'}}>
                             <Icon style={{width: "1.5rem"}}/>
                         </div>
                         )}
