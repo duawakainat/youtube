@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    /* font-family: 'Roboto',"Arial",sans-serif; */
+    font-family: 'Roboto', sans-serif;
+}
+.inputS_2{
+    border: 1px solid #ccc !important;
+    font-size: 16px;
+}
+@media (min-width: 300px) and (max-width: 998px) {
+    .inputS_2 {
+        width: 100% !important;
+        border: 0 !important;
+    }}
+.inputS {
+    /* width: 460px !important; */
+    border: 1px solid #ccc !important;
+    font-size: 16px;
+}
+@media (min-width: 300px) and (max-width: 998px) {
+    .inputS {
+        border: 0 !important;
+    }}
+.btn {
+    border-left: 1px solid #ccc;
+}
+@media (min-width: 300px) and (max-width: 998px) {
+    .VideoS{
+       background-color: transparent;
+    }
+}
+
+.icon {
+    background-color: #d9d9d9;
+    border-radius: 50%;
+    display: flex;
+    justify-self: center;
+
+}
+
+.Wid_T {
+    width: 157px;
+    height: 40px;
+}
+.VideoS{
+    width: 100% !important;
+}
+@media (min-width: 480px) and (max-width: 640px) {
+    .VideoS{
+        width: 100% !important;
+        height: 288px;
+    }}
+    @media (min-width: 300px) and (max-width: 480px) {
+        .VideoS{
+            width: 100% !important;
+           max-height: 192px;
+        }
+  }
+.VideoS[poster]{
+    width: 100% !important;
+    object-fit: cover;
+}
+.VideoL{
+    width: 100% !important;
+    object-fit: cover;
+}
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    /* width: 600px; */
+    /* height: 100vh; */
+    display: flex;
+    gap: 0px !important;
+    align-items: center;
+    justify-content: space-between;
+}
+.Responsive{
+    column-gap: 20px;
+    margin-left: 20px;
+}
+.ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    max-width: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+        background: transparent;
+        -webkit-appearance: none;
+        width: 0;
+        height: 0;
+    }
+
+}
+.li{
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+
+  .title {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 34px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 100px 50px 50px;
+    color: #fff;
+    background: linear-gradient(to top, #000, rgba(0, 0, 0, 0));
+  }
