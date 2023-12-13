@@ -77,7 +77,7 @@ export default function Main(props) {
    const getNavItemClasess = (menu) => {
      console.log(router.pathname);
      return classNames(
-       "flex items-center cursor-pointer hover:bg-light rounded w-full overflow-hidden whitespace-nowrap",
+       "flex items-center cursor-pointer hover:bg-gray-100 rounded-md w-full overflow-hidden whitespace-nowrap",
        {
          // ["bg-light-lighter"]: activeMenu.id === menu.id
        }
@@ -217,7 +217,7 @@ return <div key={menu.id} className={classes}>
                         
                           {toogleCallapse && (
                             // <Link/>
-                            <div style={{height: '74px'}}>
+                            <div style={{height: '74px'}}  >
                             <Link href={menu.link}>
                               <Icon style={{width: "1.5rem",height: "1.5rem"}}></Icon>
                               <span className={classNames('text-[10px] font-medium text-text-light')}>
