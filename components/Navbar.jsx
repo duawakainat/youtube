@@ -42,7 +42,10 @@ gsap.to(e.target, {scale : 1.5});
         }
        }
   return (
-    <div className="App">
+    <div className="App sticky right-0 left-0 bg-white top-0 z-[999]">
+    <button className="w-12 h-8 !bg-gray-100 flex justify-center items-center lg:hidden rounded-sm ml-4">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 28 28" {...props}><path fill="#000" d="M3.5 14C3.5 8.201 8.201 3.5 14 3.5S24.5 8.201 24.5 14S19.799 24.5 14 24.5S3.5 19.799 3.5 14M14 2C7.373 2 2 7.373 2 14s5.373 12 12 12s12-5.373 12-12S20.627 2 14 2M8.083 9.698c-.388-1.01.604-2.003 1.615-1.615l4.995 1.92a5.75 5.75 0 0 1 3.305 3.304l1.919 4.995c.388 1.01-.605 2.003-1.615 1.615l-4.995-1.92a5.75 5.75 0 0 1-3.305-3.304zm1.602-.013l1.717 4.47a4.25 4.25 0 0 0 2.443 2.443l4.47 1.717l-1.717-4.47a4.25 4.25 0 0 0-2.443-2.443z"></path></svg>
+  </button>
         {scrollX !== 0 && (
             <button className="prev pl-4" 
             onClick={()=>slide(-50)}
