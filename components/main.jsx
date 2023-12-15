@@ -447,15 +447,15 @@ return <div key={menu.id} className={classes}>
 
 
       <div className="grid lg:grid-cols-3 md:grid-cols-3 min-[864px]:grid-cols-3 max-[864px]:grid-cols-2 min-[578px]:grid-cols-2 max-[578px]:grid-cols-1 mx-4 my-6 gap-4 mb-4">
-         <div className="items-center justify-center rounded bg-gray-50 ">
+         <div className="items-center justify-center rounded ">
 <Video imageV='https://img.freepik.com/free-vector/tiny-developers-programming-website-internet-platform-flat_74855-13517.jpg?size=626&ext=jpg&ga=GA1.1.1351396951.1702663879&semt=ais'/>
             
          </div>
-         <div className="items-center justify-center rounded bg-gray-50 ">
+         <div className="items-center justify-center rounded ">
          <Video imageV='https://img.freepik.com/free-psd/architecture-concept-banner-template_23-2148806739.jpg?size=626&ext=jpg&ga=GA1.1.1351396951.1702663879&semt=ais'/>
             
          </div>
-         <div className="items-center justify-center rounded bg-gray-50 "><Video
+         <div className="items-center justify-center rounded "><Video
          imageV='https://img.freepik.com/premium-psd/school-admission-social-media-post-template_237398-63.jpg?size=626&ext=jpg&ga=GA1.1.1351396951.1702663879&semt=ais'/>
 
             
@@ -463,15 +463,15 @@ return <div key={menu.id} className={classes}>
       {/* </div>
 
       <div className="grid lg:grid-cols-3 mx-4 my-6 md:grid-cols-2 sm:grid-cols-2 max-[600px]:grid-cols-2 gap-4 mb-4"> */}
-         <div className="items-center justify-center rounded bg-gray-50 ">
+         <div className="items-center justify-center rounded ">
 <Video imageV='https://img.freepik.com/free-psd/school-admission-social-media-post-web-banner-template_237398-401.jpg?size=626&ext=jpg&ga=GA1.1.1351396951.1702663879&semt=ais'/>
             
          </div>
-         <div className="items-center justify-center rounded bg-gray-50 ">
+         <div className="items-center justify-center rounded ">
          <Video imageV='https://img.freepik.com/free-psd/digital-marketing-live-webinar-corporate-social-media-post-template_202595-419.jpg?size=626&ext=jpg&ga=GA1.1.1351396951.1702663879&semt=ais'/>
             
          </div>
-         <div className="items-center justify-center rounded bg-gray-50">
+         <div className="items-center justify-center rounded">
           <Video imageV='https://img.freepik.com/free-psd/digital-marketing-live-webinar-corporate-social-media-post-template_202595-423.jpg?size=626&ext=jpg&ga=GA1.1.1351396951.1702663879&semt=ais'/>
 
             
