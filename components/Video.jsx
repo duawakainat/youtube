@@ -4,7 +4,7 @@ import '../app/globals.css'
 import imagess from './imagess.json'
 export default function Video(props) {
   return (
-    <div className='lg:h-[333px] sm:h-[311px] max-[630px]:h-[380px] block items-start'>
+    <div className='lg:h-[333px]  sm:h-[288px] max-[630px]:h-[380px] block items-start'>
   
 <video className="VideoS lg:h-48 md:h-40 sm:h-48   rounded-2xl" poster={props.imageV} autoPlay muted controls>
   <source src="https://www.youtube.com/watch?v=geDJIcOU7dg" className='w-100' type="video/mp4"/>
