@@ -106,12 +106,12 @@ export default function Main(props) {
    
     return(
       <div className='h-screen'>
-        <div className='grid grid-cols-4 max-[640px]:grid-cols-4 flex items-center border-1 lg:hidden border-t-gray-100 fixed z-50 bottom-0 right-0 left-0 text-center bg-white leading-12'>
+        <div className='grid grid-cols-4 max-[640px]:grid-cols-4 flex items-center border-1 lg:hidden border-t-gray-200 fixed z-50 bottom-0 right-0 left-0 text-center bg-white leading-12' style={{borderTop: '1px solid lightgray'}}>
       {menuItem.map(({icon:Icon, ...menu})=>{
         const classes= getNavItemClasess(menu);
 return <div key={menu.id} className={classes}>
   {/* <Link href={menu.link}> */}
-    <div className='flex items-center my-1 justify-center w-full'>
+    <div className='flex items-center border-t-gray-200 my-1 justify-center w-full'>
       <div>
         <Link href={menu.link}>
           <Icon style={{width: "1.5rem",height: "1.5rem"}}></Icon>
