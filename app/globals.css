@@ -69,6 +69,7 @@ background-color: #000 !important;}
 .VideoS[poster]{
     width: 100% !important;
     object-fit: cover;
+    z-index: 999999;
 }
 .VideoL{
     width: 100% !important;

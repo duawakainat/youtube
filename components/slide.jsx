@@ -113,9 +113,45 @@ var settings = {
     marginLeft: 20,
     responsive: [
       {
+        breakpoint: 2448,
+        settings: {
+          slidesToShow: 9,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 2220,
+        settings: {
+          slidesToShow: 8,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 2020,
+        settings: {
+          slidesToShow: 7,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1720,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
           breakpoint: 998,
           settings: {
-            slidesToShow: 6,
+            slidesToShow: 5,
             slidesToScroll: 3,
             infinite: true,
             dots: true
@@ -189,7 +225,13 @@ const slide = (props) => {
               <Video2 imageS='https://img.freepik.com/premium-vector/template_987671-101.jpg?size=626&ext=jpg&ga=GA1.1.1351396951.1702663879&semt=ais'/>
               </div>
               <div>
+              <Video2 imageS='https://img.freepik.com/premium-psd/banner-offer-gamer-3d-sale-products-brazil_475765-340.jpg?size=626&ext=jpg&ga=GA1.1.1351396951.1702663879&semt=ais'/>
+              </div>
+              <div>
               <Video2 imageS='https://img.freepik.com/premium-photo/clash-with-aliens-fantastic-battle_250484-4913.jpg?size=626&ext=jpg&ga=GA1.1.1351396951.1702663879&semt=ais'/>
+              </div>
+              <div>
+              <Video2 imageS='https://img.freepik.com/free-psd/gamer-background-with-accessories_1419-2365.jpg?size=626&ext=jpg&ga=GA1.1.1351396951.1702663879&semt=ais'/>
               </div>
             </Slider></div>
   )

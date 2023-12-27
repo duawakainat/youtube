@@ -4,7 +4,7 @@ import '../app/globals.css'
 export default function Video2(props) {
   return (
     <div className='relative' style={{marginLeft: '16px'}}>
-<video className="lg:h-[353px] md:h-[288px] sm:h-[288px] max-[640px]:h-[288px] object-cover lg:rounded-2xl sm:rounded-md VideoL"  poster={props.imageS}  autoPlay muted controls>
+<video className="lg:h-[353px] md:h-[288px] sm:h-[288px] max-[640px]:h-[288px] object-cover lg:rounded-2xl sm:rounded-md VideoL"  poster={props.imageS}>
   <source src="https://www.youtube.com/watch?v=SfXaR_AQ0XU" className='w-100 h-[353px] rounded-md' type="video/mp4"/>
 </video>
   <div className="flex flex-row lg:relative md:absolute sm:absolute max-[640px]:absolute lg:bottom-0 sm:bottom-2 max-[640px]:bottom-2 max-[640px]:left-2 sm:left-2 sm:right-1 max-[640px]:right-1">
