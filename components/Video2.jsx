@@ -9,8 +9,8 @@ export default function Video2(props) {
 </video>
   <div className="flex flex-row lg:relative md:absolute sm:absolute max-[640px]:absolute lg:bottom-0 sm:bottom-2 max-[640px]:bottom-2 max-[640px]:left-2 sm:left-2 sm:right-1 max-[640px]:right-1">
             <div className="space-y-0.5  dark:text-white text-left rtl:text-right mr-6">
-                <h3 className='leading-4 lg:text-lg md:text-sm sm:text-sm max-[640px]:text-sm mt-3 lg:text-[#0f0f0f] sm:text-[#ffffff] max-[640px]:text-[#ffffff] font-medium'>Best Joseph McFall</h3>
-                <div className="text-xs lg:text-[#606060] sm:text-[#ffffff] max-[640px]:text-[#ffffff] font-normal">6.6 Views</div>
+                <h3 className='leading-4 lg:text-[16px] md:text-sm sm:text-sm max-[640px]:text-sm mt-3 lg:text-[#0f0f0f] sm:text-[#ffffff] max-[640px]:text-[#ffffff] font-medium'>Best Joseph McFall</h3>
+                <div className="text-xs lg:text-[rgb(96,96,96)] sm:text-[#ffffff] max-[640px]:text-[#ffffff] font-normal">6.6 Views</div>
             </div>
         </div> 
     </div>
