@@ -149,6 +149,15 @@ var settings = {
         }
       },
       {
+        breakpoint: 1520,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
           breakpoint: 998,
           settings: {
             slidesToShow: 5,
