@@ -387,10 +387,9 @@ return <div key={menu.id} className={classes}>
          <Slide/>
       </div>
       <div className='sticky right-0 left-0 top-0 '>
-<div className="grid xl:grid-cols-4 min-[2020px]:grid-cols-6 min-[2420px]:grid-cols-8 min-[2220px]:grid-cols-7 min-[1720px]:grid-cols-5 lg:grid-cols-3 md:grid-cols-3 min-[864px]:grid-cols-3 max-[864px]:grid-cols-2 min-[578px]:grid-cols-2 max-[578px]:grid-cols-1 mx-4 my-6 gap-4 mb-4">
-       
+<div className="grid xl:grid-cols-4 min-[2020px]:grid-cols-6 min-[2420px]:grid-cols-8 min-[2220px]:grid-cols-7 min-[1720px]:grid-cols-5 lg:grid-cols-3 md:grid-cols-3 min-[864px]:grid-cols-3 max-[864px]:grid-cols-2 min-[578px]:grid-cols-2 max-[578px]:grid-cols-1 mx-4 my-6 gap-4 mb-4">       
        <div className='w-100'>  <div className="items-center w-100 justify-center rounded ">
-         <Video imageV='https://img.freepik.com/premium-psd/online-cooking-class-promotion-social-media-instagram-post-template_570737-2.jpg?w=740'/>
+         <Video imageV='https://img.freepik.com/free-psd/fashion-show-poster-template_23-2148772249.jpg?size=626&ext=jpg&ga=GA1.1.1351396951.1702663879&semt=ais'/>
          </div>
          </div>
          <div className='w-100'>

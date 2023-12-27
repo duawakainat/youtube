@@ -71,6 +71,9 @@ background-color: #000 !important;}
     object-fit: cover;
     z-index: 999999;
 }
+.imageV[poster]{
+    object-fit: cover;
+}
 .VideoL{
     width: 100% !important;
     object-fit: cover;
