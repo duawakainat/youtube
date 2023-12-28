@@ -1,9 +1,8 @@
-'use client'
-import { useEffect } from 'react'
-import { initFlowbite } from 'flowbite'
-import Image from 'next/image'
+export const metadata = {
+  title: 'Youtube Page',
+  description: 'No more discripyion',
+}
 import './globals.css'
-
 import Main from '../components/main'
 export default function Home() {
   return (
