@@ -30,8 +30,7 @@ body{
 .btn {
     border-left: 1px solid #ccc;
 }
-/* .btn:hover {
-background-color: #000 !important;} */
+
 @media (min-width: 300px) and (max-width: 998px) {
     .VideoS{
        background-color: transparent;

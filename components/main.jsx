@@ -47,7 +47,7 @@ export default function Main(props) {
   return (
     <div className="h-screen">
       <div
-        className="grid grid-cols-4 max-[640px]:grid-cols-4 flex items-center border-1 lg:hidden border-t-gray-200 fixed z-50 bottom-0 right-0 left-0 text-center bg-white leading-12"
+        className="grid grid-cols-4 max-[640px]:grid-cols-4 text-center flex items-center border-1 lg:hidden border-t-gray-200 fixed z-50 bottom-0 right-0 left-0 text-center bg-white leading-12"
         style={{ borderTop: "1px solid lightgray" }}
       >
         {menuItem.map(({ icon: Icon, ...menu }) => {
@@ -55,7 +55,7 @@ export default function Main(props) {
           return (
             <div key={menu.id} className={classes}>
               {/* <Link href={menu.link}> */}
-              <div className="flex items-center border-t-gray-200 my-1 justify-center w-full">
+              <div className="flex items-center text-center border-t-gray-200 my-1 justify-center w-full">
                 <div>
                   <Link href={menu.link}>
                     <Icon style={{ width: "1.5rem", height: "1.5rem" }}></Icon>
@@ -145,7 +145,7 @@ export default function Main(props) {
                 >
                   <span className="sr-only">Open user menu</span>
                   <Image
-                    src="/sreejith-kalesh-qTmrnmiEwLQ-unsplash.jpg" alt="user photo" style={{width: 'auto', height: 'auto'}} className="w-8 h-8 rounded-full" width={32} height={32}
+                    src="/sreejith-kalesh-qTmrnmiEwLQ-unsplash.jpg" alt="user photo" className="!w-8 !h-8 max-[640px]:!w-8 max-[640px]:!h-8  rounded-full" width={32} height={32}
                   />
                 </button>
 
@@ -208,12 +208,7 @@ export default function Main(props) {
                     data-dropdown-toggle="dropdown-user"
                   >
                     <span className="sr-only">Open user menu</span>
-                    <Image
-                      src="/sreejith-kalesh-qTmrnmiEwLQ-unsplash.jpg"
-                      alt="user photo"
-                      className="w-8 h-8 rounded-full"
-                      width={32}
-                      height={32}
+                    <Image src="/sreejith-kalesh-qTmrnmiEwLQ-unsplash.jpg" alt="user photo" className="sm:w-8 sm:h-8 max-[640px]:w-8 max-[640px]:h-8  rounded-full" width={32} height={32} style={{width: 'auto', height: 'auto'}}
                     />
                   </button>
                 </div>
