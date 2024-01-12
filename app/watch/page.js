@@ -4,7 +4,7 @@ export const metadata = {
 }
 import React from 'react'
 import Watch1V from '@/components/watch1V'
-const page = () => {
+const Page = () => {
   return (
     <div className=''>
         <Watch1V/>
@@ -12,4 +12,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

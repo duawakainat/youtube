@@ -105,7 +105,7 @@ var settings = {
       }
     ]
   };
-const slide = (props) => {
+const Slide = (props) => {
   return (
     <div> <div className="flex w-24 ml-6 mb-6 justify-center items-center ">
 
@@ -150,4 +150,4 @@ const slide = (props) => {
   )
 }
 
-export default slide
+export default Slide

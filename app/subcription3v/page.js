@@ -4,7 +4,7 @@ export const metadata = {
 }
 import React from 'react'
 import Dicsription from '@/components/dicsription'
-const page = () => {
+const Page = () => {
   return (
     <div>
         <Dicsription/>
@@ -12,4 +12,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

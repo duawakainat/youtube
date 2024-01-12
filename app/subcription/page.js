@@ -6,7 +6,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Video4 from "@/components/video4";
-const page = (props) => {
+const Page = (props) => {
   const [Active , setActive] = useState(3);
   const ToggleTab = (index)=>{
     setActive(index);
@@ -125,4 +125,4 @@ const page = (props) => {
   );
 };
 
-export default page;
+export default Page;

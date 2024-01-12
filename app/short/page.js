@@ -4,7 +4,7 @@
 // }
 import React from 'react'
 import ShortP from '@/components/shortP'
-const page = () => {
+const Page = () => {
   return (
     <div>
     <div className='w-100' style={{width: "100%"}}>  <ShortP/></div>
@@ -12,4 +12,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

@@ -3,7 +3,7 @@ import Video2 from './Video2';
 import React from 'react'
 import Video4 from "@/components/video4";
 import { useState } from 'react'
-const likeP = (props) => {
+const LikeP = (props) => {
     const [Active , setActive] = useState(1);
     const ToggleTab = (index)=>{
         setActive(index);
@@ -201,4 +201,4 @@ const likeP = (props) => {
   )
 }
 
-export default likeP
+export default LikeP

@@ -5,7 +5,7 @@ export const metadata = {
 import React from 'react'
 import HistoryC1 from '@/components/historyC1'
 import SideNav from '@/components/SideNav'
-const page = () => {
+const Page = () => {
   return (
     <div>
       {/* <div className="flex flex-row h-screen justify-start bg-white overflow-y-scroll overscroll-contain">
@@ -22,4 +22,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

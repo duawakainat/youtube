@@ -4,7 +4,7 @@ export const metadata = {
   }
 import React from 'react'
 import Sub from '@/components/sub'
-const page = () => {
+const Page = () => {
   return (
     <div>
         <Sub/>
@@ -12,4 +12,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

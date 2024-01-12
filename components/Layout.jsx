@@ -1,7 +1,7 @@
 import React from "react";
 import SideNav from "./SideNav";
 import Slide from './Navbar'
-const layout = ({ children }) => {
+const Layout = ({ children }) => {
   return (
     <div>
      
@@ -17,4 +17,4 @@ const layout = ({ children }) => {
   );
 };
 
-export default layout;
+export default Layout;
