@@ -1,3 +1,4 @@
+'use client'
 import Tag from "./Tag";
 import Image from 'next/image'
 import '../app/globals.css'

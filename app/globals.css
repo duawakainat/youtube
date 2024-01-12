@@ -5,6 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 * {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Roboto', sans-serif; */
     font-family: 'Roboto', sans-serif;
 }
 body{
@@ -68,6 +71,19 @@ body{
     object-fit: cover;
     z-index: 999999;
 }
+.VideoS2{
+    width: 100% !important;
+}
+@media (min-width: 992px){
+    .VideoS2{
+        width: 100% !important;
+    }
+}
+@media (min-width: 992px){
+    .VideoS2[poster]{
+        width: 100% !important;
+    }
+}
 .imageV[poster]{
     object-fit: cover;
 }
@@ -117,3 +133,22 @@ body{
     color: #fff;
     background: linear-gradient(to top, #000, rgba(0, 0, 0, 0));
   }
+ .content{
+    display: none;
+  }
+ 
+  .active-content {
+    display: block;
+}
+.active-tabs{
+border-bottom: 2px solid black;
+}
+.active-Like{
+    background-color: black;
+    color: #fff;
+}
+.bg_image{
+    background-image: url('/hqdefault.jpg');
+    background: linear-gradient(to bottom, rgba(114,76,35,0.800) 0%, rgb(153 90 22 / 85%) 33%, rgba(114,76,35,0.800) 100%);;
+    /* opacity: .7; */
+}

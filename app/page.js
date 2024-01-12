@@ -1,13 +1,17 @@
 export const metadata = {
-  title: 'Youtube Page',
-  description: 'No more discripyion',
+  title: 'Home Page',
+  description: 'Home more discription',
 }
 import './globals.css'
+import Layout from '@/components/Layout'
 import Main from '../components/main'
+import Home1 from '@/components/home1'
 export default function Home() {
   return (
     <div>
-      <Main />
+      <Home1/>
+      {/* <Main/> */}
+      {/* <Layout /> */}
     </div>
     )
 }

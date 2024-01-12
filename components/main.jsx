@@ -45,7 +45,7 @@ export default function Main(props) {
   };
 
   return (
-    <div className="h-screen">
+    <div className="">
       <div
         className="grid grid-cols-4 max-[640px]:grid-cols-4 text-center flex items-center border-1 lg:hidden border-t-gray-200 fixed z-50 bottom-0 right-0 left-0 text-center bg-white leading-12"
         style={{ borderTop: "1px solid lightgray" }}
@@ -145,7 +145,7 @@ export default function Main(props) {
                 >
                   <span className="sr-only">Open user menu</span>
                   <Image
-                    src="/sreejith-kalesh-qTmrnmiEwLQ-unsplash.jpg" alt="user photo" className="!w-8 !h-8 max-[640px]:!w-8 max-[640px]:!h-8  rounded-full" width={32} height={32}
+                    src="/sreejith-kalesh-qTmrnmiEwLQ-unsplash.jpg" alt="user photo" className="lg:w-8 lg:h-8 md:w-8 md:h-8 sm:!w-8 sm:!h-8 max-[640px]:!w-8 max-[640px]:!h-8  rounded-full" width={32} height={32}
                   />
                 </button>
 
@@ -274,7 +274,7 @@ export default function Main(props) {
           </div>
         </div>
       </nav>
-      <div className="flex flex-row h-screen justify-start bg-white overflow-y-scroll overscroll-contain">
+      {/* <div className="flex flex-row h-screen justify-start bg-white overflow-y-scroll overscroll-contain">
         <div className="flex flex-col sticky right-0 left-0 bg-white top-0 z-50">
           <SideNav
             settoogleCallapse={settoogleCallapse}
@@ -298,7 +298,7 @@ export default function Main(props) {
             <Video2C />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
