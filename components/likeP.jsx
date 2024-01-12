@@ -11,7 +11,7 @@ const likeP = (props) => {
       const getActiveClass=(index, className)=>{
        return Active === index ? className : '';
       }
-      const [video, setVideo] = useState ([
+      const [Video, SetVideo] = useState ([
         { index: "1",
         imageV:'https://img.freepik.com/free-vector/happy-new-year-background_23-2148022232.jpg?size=626&ext=jpg&ga=GA1.1.1351396951.1702663879&semt=ais',
        
@@ -99,7 +99,7 @@ const likeP = (props) => {
       <div className="contant-box">
       <div className={`content ${getActiveClass(1, "active-content")}`}>
       
-           {video.map((menu,index) => {
+           {Video.map((menu,index) => {
             return <div key={index} className="my-2 lg:ms-0 lg:px-0 sm:px-3 max-[630px]:px-3 max-[630px]:ms-0">
 
                 <div className="flex items-center lg:h-[90px] rounded-md">
@@ -142,7 +142,7 @@ const likeP = (props) => {
 
 <div className={`content ${getActiveClass(2, "active-content")}`}>
    
-           {video.map((menu,index) => {
+           {Video.map((menu,index) => {
             return <div key={menu.index} className="mt-3 lg:p-0 sm:px-3 max-[630px]:px-3 max-[630px]:ms-0">
 
                 <div className="flex lg:h-[90px] rounded-md">

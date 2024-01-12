@@ -3,7 +3,6 @@ export const metadata = {
   description: 'Watch more discription',
 }
 import React from 'react'
-import Layout from '@/components/Layout'
 import Watch1V from '@/components/watch1V'
 const page = () => {
   return (

@@ -6,7 +6,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Video4 from "@/components/video4";
-import Layout from "@/components/layout";
 const page = (props) => {
   const [Active , setActive] = useState(3);
   const ToggleTab = (index)=>{

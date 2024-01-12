@@ -5,7 +5,6 @@ export const metadata = {
 import React from 'react'
 import HistoryC1 from '@/components/historyC1'
 import SideNav from '@/components/SideNav'
-import Layout from '@/components/Layout'
 const page = () => {
   return (
     <div>
