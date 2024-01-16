@@ -62,8 +62,8 @@ const menuItem5 = [
     const [isCallapse, setIsCallapse] = useState(false);
     const [buttonT, setbuttonT]=useState(false)
     const wrapperClesses = classNames(
-        "h-screen px-4 pt-4 flex justify-between flex-col lg:pb-16 flex-row items-center sticky right-0 left-0 bg-white top-0 z-50  overflow-y-hidden hover:overflow-y-scroll  lg:block hidden md:hidden sm:hidden max-[630px]:hidden",
-        {  ["w-60"]: !toogleCallapse, ["w-20"]: toogleCallapse}
+        "h-screen  pt-4 flex flex-col lg:pb-16 flex-row items-center sticky right-0 left-0 bg-white top-0 z-50  lg:block hidden md:hidden sm:hidden max-[630px]:hidden",
+        {  ["w-60 flex px-4 overflow-y-hidden hover:overflow-y-scroll"]: !toogleCallapse, ["w-20 flex flex-col justify-center px-0"]: toogleCallapse}
        );
        const router = useRouter();
        const activeMenu = useMemo(
@@ -109,9 +109,8 @@ const menuItem5 = [
                 <div className="flex items-center justify-center w-full">
                         
                           {toogleCallapse && (
-                            // <Link/>
-                            <div className='flex items-center' style={{height: '74px'}}  >
-                            <Link href={menu.link}>
+                            <div className='flex items-center justify-center px-4' style={{height: '74px'}}  >
+                            <Link className='flex flex-col justify-center' href={menu.link}>
                               <Icon style={{width: "1.5rem",height: "1.5rem"}}></Icon>
                               <span className={classNames('text-[10px] font-medium text-text-light')}>
                               {menu.Label}</span></Link></div>
@@ -212,7 +211,7 @@ const menuItem5 = [
 <ul>
 <li className='border-b-[1px] border-gray-300 my-3'></li>
          <li>
-            <a href="#" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+            <a href="#" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 group">
                <span className="flex me-3 font-medium whitespace-nowrap">Subscription</span>
               
             </a>

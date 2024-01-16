@@ -7,15 +7,16 @@ import { useState, useRef, useMemo, useEffect } from "react";
 import Home from "@/components/icon/home";
 import Short from "@/components/icon/short";
 import Link from "next/link";
-import Subcription from "@/components/icon/subcription";
+// import Subcription from "@/components/icon/subcription";
+import Subcription3 from '@/components/icon/subC3';
 import { useRouter } from "next/navigation";
 import You from "@/components/icon/you";
 import { usePathname } from 'next/navigation';
 const menuItem = [
-  { id: 1, Label: "Home", icon: Home, link: "/icon/home" },
-  { id: 2, Label: "Short", icon: Short, link: "/icon/short" },
-  { id: 3, Label: "Subcription", icon: Subcription, link: "/icon/subcription" },
-  { id: 4, Label: "Library", icon: You, link: "/icon/you" },
+  { id: 1, Label: "Home", icon: Home, link: "" },
+  { id: 2, Label: "Short", icon: Short, link: "" },
+  { id: 3, Label: "Subcription", icon: Subcription3, link: "" },
+  { id: 4, Label: "Library", icon: You, link: "" },
 ];
 export default function RootLayout({ children },props) {
   const [toogleCallapse, settoogleCallapse] = useState(false);
@@ -29,7 +30,7 @@ export default function RootLayout({ children },props) {
   const getNavItemClasess = (menu) => {
     console.log(router.pathname);
     return classNames(
-      "flex items-center cursor-pointer hover:bg-gray-100 rounded-md w-full whitespace-nowrap",
+      "flex items-center justify-center cursor-pointer hover:bg-gray-100 rounded-md w-full whitespace-nowrap",
       {}
     );
   };
@@ -43,7 +44,7 @@ const usePath=usePathname()
         <div className='grid grid-cols-1'>
           {usePath !== '/short' ? 
       <div
-        className="grid grid-cols-4 max-[640px]:grid-cols-4 text-center flex items-center border-1 lg:hidden border-t-gray-200 fixed z-50 bottom-0 right-0 left-0 text-center bg-white leading-12"
+        className="grid grid-cols-4 max-[640px]:grid-cols-4 text-center items-center border-1 lg:hidden border-t-gray-200 fixed z-50 bottom-0 right-0 left-0 bg-white leading-12"
         style={{ borderTop: "1px solid lightgray" }}
       >
         {menuItem.map(({ icon: Icon, ...menu }) => {
@@ -53,8 +54,8 @@ const usePath=usePathname()
               {/* <Link href={menu.link}> */}
               <div className="flex items-center text-center border-t-gray-200 my-1 justify-center w-full">
                 <div>
-                  <Link href={menu.link}>
-                    <Icon style={{ width: "1.5rem", height: "1.5rem" }}></Icon>
+                  <Link href={menu.link} className='flex flex-col justify-center'>
+                    <Icon className='flex justify-center' style={{ width: "1.5rem", height: "1.5rem" }}></Icon>
                     <span
                       className={classNames(
                         "text-[11px] font-medium text-text-light"
@@ -72,7 +73,7 @@ const usePath=usePathname()
       </div>: ''}
       <nav className=" w-full lg:shadow-none sm:shadow-md max-[640px]:shadow-md h-14 ">
         <div className="px-3 ">
-          <div className="grid grid-cols-6">
+          <div className="grid grid-cols-7">
             <div className="flex items-center justify-start rtl:justify-end sm:col-span-1 max-[630px]:col-span-2">
               <div className="flex justify-between items-center relative">
                 <div className="flex items-center">
@@ -105,13 +106,13 @@ const usePath=usePathname()
                 </div>
               </div>
             </div>
-            <form className="lg:col-span-4 md:col-span-5 sm:col-span-5 max-[630px]:col-span-4">
+            <form className="lg:col-span-5 md:col-span-6 sm:col-span-6 max-[630px]:col-span-5">
               <div className="lg:flex justify-center items-center h-14 md:block row">
-                <div className="relative lg:w-[460px] md:w-[94%] sm:w-[94%] max-[630px]:w-[94%]">
+                <div className="relative lg:w-[550px] md:w-[94%] sm:w-[94%] max-[630px]:w-[94%]">
                   <input
                     type="search"
                     id="search-dropdown"
-                    className="block lg:w-[460px] md:w-[100%] sm:w-[100%] max-[630px]:w-[100%] inputS  ps-4 pe-1 py-0 h-10 md:h-10 z-20 text-sm text-gray-900 bg-gray-500  rounded-s-full rounded-e-full  bg-white lg:placeholder-gray-400 sm:placeholder-white max-[630px]:placeholder-white dark:text-white"
+                    className="block lg:w-[550px] outline-0 md:w-[100%] sm:w-[100%] max-[630px]:w-[100%] pe-12 inputS  ps-4 py-0 h-10 md:h-10 z-20 text-sm text-gray-900 rounded-s-full rounded-e-full bg-white sm:placeholder-gray max-[630px]:placeholder-white"
                     placeholder="Search"
                     required
                   />
@@ -135,13 +136,13 @@ const usePath=usePathname()
                 </div>
                 <button
                   type="button"
-                  className="text-sm w-10 absolute right-0 top-0 mt-1 max-[600px]:w-6 justify-center rounded-full lg:hidden sm:flex max-[630px]:flex"
+                  className="text-sm w-10 absolute right-0 top-0 mt-1 justify-center rounded-full lg:hidden sm:flex max-[630px]:flex"
                   aria-expanded="false"
                   data-dropdown-toggle="dropdown-user"
                 >
                   <span className="sr-only">Open user menu</span>
                   <Image
-                    src="/sreejith-kalesh-qTmrnmiEwLQ-unsplash.jpg" alt="user photo" className="min-w-8 max-h-8 max-[640px]:!w-8 max-[640px]:!h-8 rounded-full" width={32} height={32}
+                    src="/sreejith-kalesh-qTmrnmiEwLQ-unsplash.jpg" alt="user photo" className="sm:min-w-8 max-h-8 max-[630px]:!max-w-6 rounded-full" width={32} height={32}
                   />
                 </button>
 
@@ -204,7 +205,7 @@ const usePath=usePathname()
                     data-dropdown-toggle="dropdown-user"
                   >
                     <span className="sr-only">Open user menu</span>
-                    <Image src="/sreejith-kalesh-qTmrnmiEwLQ-unsplash.jpg" alt="user photo" className="sm:w-8 sm:h-8 max-[640px]:w-8 max-[640px]:h-8  rounded-full" width={32} height={32}
+                    <Image src="/sreejith-kalesh-qTmrnmiEwLQ-unsplash.jpg" alt="user photo" className="sm:w-8 sm:h-8 max-[635px]:min-w-8 max-[635px]:h-8  rounded-full" width={32} height={32}
                     />
                   </button>
                 </div>
@@ -269,8 +270,7 @@ const usePath=usePathname()
             </div>
           </div>
         </div>
-      </nav>
-        </div>
+      </nav>         </div>
        <div className="flex flex-row bg-white h-screen  overflow-y-auto">
       <div className="flex flex-col sticky right-0 left-0 bg-white top-0 z-50">
         <SideNav  settoogleCallapse={settoogleCallapse}

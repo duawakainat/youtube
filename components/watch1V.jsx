@@ -39,17 +39,26 @@ const Watch1V = (props) => {
   ])
   return (
     <div className=''>
+
         <div className='grid lg:grid-cols-6 ralative lg:px-6 sm:p-0 max-[630px]:p-0'>
         <div className=' lg:col-span-2'>
-          <div className='lg:mb-4 w-full lg:rounded-[24px] lg:h-[83dvh] mb-6 overflow-y-auto bg_image bg-cover sticky bottom-6 top-6'>
-          <div className='lg:block sm:flex max-[630px]:flex'>
-            <div className=' p-6 grid lg:grid-cols-1 sm:grid-cols-2 max-[630px]:grid-cols-2 max-[450px]:grid-cols-1 max-[450px]:mx-0 sm:min-w-720 mx-auto'>
-            <video className="lg:h-30 rounded-2xl object-cover max-[630px]:h-48 max-[450px]:hidden" poster="/hqdefault.jpg">
+          <div className='lg:mb-4 w-full lg:rounded-[24px] lg:h-[85dvh] mb-6 overflow-y-auto bg_image bg-cover sticky bottom-6 top-6'>
+          <div className='lg:hidden flex justify-between'>
+        <div className='m-3'>
+    <svg xmlns="http://www.w3.org/2000/svg" className='w-6 h-6' viewBox="0 0 24 24" {...props}><path fill="#fff" fillRule="evenodd" d="M10.53 5.47a.75.75 0 0 1 0 1.06l-4.72 4.72H20a.75.75 0 0 1 0 1.5H5.81l4.72 4.72a.75.75 0 1 1-1.06 1.06l-6-6a.75.75 0 0 1 0-1.06l6-6a.75.75 0 0 1 1.06 0" clipRule="evenodd"></path></svg>
+ </div>
+        <div className='flex'>
+    <svg xmlns="http://www.w3.org/2000/svg" className='w-6 h-6 m-3' viewBox="0 0 32 32" {...props}><path fill="#fff" d="m29 27.586l-7.552-7.552a11.018 11.018 0 1 0-1.414 1.414L27.586 29ZM4 13a9 9 0 1 1 9 9a9.01 9.01 0 0 1-9-9"></path></svg>
+ <svg xmlns="http://www.w3.org/2000/svg" className='w-6 h-6 m-3' viewBox="0 0 24 24" {...props}><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0-2 0m0 7a1 1 0 1 0 2 0a1 1 0 1 0-2 0m0-14a1 1 0 1 0 2 0a1 1 0 1 0-2 0"></path></svg> 
+ </div>
+      </div>
+          <div className='lg:block sm:flex max-[630px]:block'>
+            <div className=' lg:p-6 lg:pb-0 lg:w-[100%] sm:max-w-[720px] sm:pb-4 grid lg:grid-cols-1 sm:grid-cols-2 max-[630px]:grid-cols-1 max-[450px]:grid-cols-1 max-[450px]:mx-0 sm:min-w-720 mx-auto'>
+            <video className="h-[100%] rounded-2xl object-cover w-[100%] max-[630px]:!px-4 max-[630px]:pb-4" poster="/hqdefault.jpg">
         <source src="https://www.youtube.com/watch?v=geDJIcOU7dg" className='w-100' type="video/mp4"/>
       </video>
-      <div className='lg:pl-0 lg:pb-0 sm:pl-6 sm:pb-4 max-[630px]:pl-6 max-[630px]:pb-4 max-[450px]:pb-3 max-[450px]:pl-0 max-[450px]:pb-0'>
+      <div className='lg:pl-0 lg:pb-0 sm:pl-6 sm:pb-4 max-[630px]:pb-4 max-[630px]:px-4 max-[450px]:pb-3'>
       <h2 className='text-[28px] font-[700] text-white'>Watch Later</h2>
-{/* <Image src="/hqdefault.jpg" width={100} height={100} alt='hello'/> */}
 <div className='mt-4 text-white'>
     <p className='mb-1 text-sm font-[500]'>kainat hafeez</p>
     <p className='mb-3 text-xs font-[400] line-clamp-1 '> 40 video<span className='mr-1'> No views</span> <span className='mr-1'>Update yesterday</span> </p>
