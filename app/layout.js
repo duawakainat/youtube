@@ -112,13 +112,13 @@ const usePath=usePathname()
                   <input
                     type="search"
                     id="search-dropdown"
-                    className="block lg:w-[550px] outline-0 md:w-[100%] sm:w-[100%] max-[630px]:w-[100%] pe-12 inputS  ps-4 py-0 h-10 md:h-10 z-20 text-sm text-gray-900 rounded-s-full rounded-e-full bg-white sm:placeholder-gray max-[630px]:placeholder-white"
+                    className="block lg:w-[550px] outline-0 md:w-[100%] sm:w-[100%] max-[630px]:w-[100%] pe-12 inputS  ps-4 py-0 h-10 md:h-10 z-20 text-sm text-gray-900 rounded-s-full rounded-e-full bg-white lg:placeholder-gray-500 placeholder-white"
                     placeholder="Search"
                     required
                   />
                   <button
                     type="submit"
-                    className="absolute h-10 md:h-10 btn flex justify-center items-center lg:bg-gray-100 md:bg-transparent sm:!bg-transparent max-[630px]:bg-transparent border-l-4 inputS lg:border-[#ccc] md:border-transparent top-0 lg:w-16 md:w-12 sm:w-12 max-[630px]:w-12 rounded-e-full end-0 text-sm font-medium text-[#ccc]"
+                    className="absolute h-10 md:h-10 btn flex justify-center items-center lg:bg-gray-100 md:bg-transparent sm:bg-transparent max-[630px]:bg-transparent border-l-4 inputS lg:border-[#ccc] md:border-transparent top-0 lg:w-16 md:w-12 sm:w-12 max-[630px]:w-12 rounded-e-full end-0 text-sm font-medium text-[#ccc]"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -170,9 +170,7 @@ const usePath=usePathname()
             <div className="lg:flex items-center justify-end col-span-1 md:hidden sm:hidden max-[630px]:hidden">
               <div className="flex justify-between items-center">
                 <div className="w-12 h-10 max-[600px]:w-6 flex justify-center items-center">
-                  {/* <svg xmlns="http://www.w3.org/2000/svg" className='w-6 h-6' viewBox="0 0 24 24" {...props}><path fill="currentColor" d="M6 16h8v-.55q0-1.1-1.1-1.775T10 13q-1.8 0-2.9.675T6 15.45V16Zm4-4q.825 0 1.413-.587T12 10q0-.825-.587-1.412T10 8q-.825 0-1.412.588T8 10q0 .825.588 1.413T10 12Zm-6 8q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h12q.825 0 1.413.588T18 6v4.5l4-4v11l-4-4V18q0 .825-.587 1.413T16 20H4Zm0-2h12V6H4v12Zm0 0V6v12Z"></path></svg> */}
-
-                  <svg
+                      <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="w-6 h-6"
                     viewBox="0 0 24 24"

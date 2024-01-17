@@ -107,15 +107,7 @@ const menuItem5 = [
             return <div key={menu.id} className={classes} >
                 <Link href={menu.link}>
                 <div className="flex items-center justify-center w-full">
-                        
-                          {toogleCallapse && (
-                            <div className='flex items-center justify-center px-4' style={{height: '74px'}}  >
-                            <Link className='flex flex-col justify-center' href={menu.link}>
-                              <Icon style={{width: "1.5rem",height: "1.5rem"}}></Icon>
-                              <span className={classNames('text-[10px] font-medium text-text-light')}>
-                              {menu.Label}</span></Link></div>
-                          )}
-                        <div  >
+                        <div>
                         {!toogleCallapse && (
                        <div className='px-3 flex items-center' style={{height: '40px'}}>   <div style={{width: '48px'}}><Icon style={{width: "1.5rem"}}/></div>
                             <span className={classNames('text-sm font-medium text-text-light')}>
@@ -123,6 +115,28 @@ const menuItem5 = [
                             </span></div>
 
                         )}
+                    </div></div>
+                </Link>
+                 
+            </div>;
+          })}
+        </div>   
+        <div className="flex flex-col items-start justify-center">
+          {menuItem.map(({ icon: Icon, ...menu }) => {
+            const classes = getNavItemClasess(menu);
+            return <div key={menu.id} className='flex'>
+                <Link href={menu.link}>
+                <div className="flex items-center justify-center w-full">
+                        
+                          {toogleCallapse && (
+                            <div className={`flex items-center justify-center px-4 ${classes}`} style={{height: '74px'}}  >
+                            <Link className='flex flex-col justify-center' href={menu.link}>
+                              <Icon className='flex justify-center text-center' style={{width: "1.5rem",height: "1.5rem"}}></Icon>
+                              <span className={classNames('text-[10px] font-medium text-text-light')}>
+                              {menu.Label}</span></Link></div>
+                          )}
+                        <div>
+                      
                     </div></div>
                 </Link>
                  
