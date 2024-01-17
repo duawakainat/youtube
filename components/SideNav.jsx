@@ -16,6 +16,7 @@ import HayI from '@/public/peakpx.jpg'
 import Home from "./icon/home";
 import Short from "./icon/short";
 import Subcription from "./icon/subcription";
+import Subcrip2 from './icon/subcrip2'
 import classNames from "classnames";
 import { useRouter } from "next/navigation";
 import Link from 'next/link'
@@ -36,6 +37,11 @@ const menuItem5 = [
      { id: 2, Label: "Short", icon: Short, link: "/short" },
      { id: 3, Label: "Subcription", icon: Subcription, link: "/subcription3v" },
    ];
+   const menuItem7 = [
+    { id: 1, Label: "Home", icon: Home, link: "/" },
+    { id: 2, Label: "Short", icon: Short, link: "/short" },
+    { id: 3, Label: "Subcription", icon: Subcrip2, link: "/subcription3v" },
+  ];
    const menuItem2 = [
      { id: 1, Label: "Your Channel", icon: Channel, link: "/subcription" },
      { id: 2, Label: "History", icon: History, link: "/history" },
@@ -122,21 +128,20 @@ const menuItem5 = [
           })}
         </div>   
         <div className="flex flex-col items-start justify-center">
-          {menuItem.map(({ icon: Icon, ...menu }) => {
+          {menuItem7.map(({ icon: Icon, ...menu }) => {
             const classes = getNavItemClasess(menu);
-            return <div key={menu.id} className='flex'>
+            return <div key={menu.id} className="flex justify-center items-center cursor-pointer hover:bg-gray-100 rounded-md w-full whitespace-nowrap">
                 <Link href={menu.link}>
                 <div className="flex items-center justify-center w-full">
                         
                           {toogleCallapse && (
-                            <div className={`flex items-center justify-center px-4 ${classes}`} style={{height: '74px'}}  >
+                            <div className='flex items-center justify-center' style={{height: '74px'}}  >
                             <Link className='flex flex-col justify-center' href={menu.link}>
-                              <Icon className='flex justify-center text-center' style={{width: "1.5rem",height: "1.5rem"}}></Icon>
+                              <Icon className='flex justify-center text-center mb-1.5' style={{width: "1.5rem",height: "1.5rem"}}></Icon>
                               <span className={classNames('text-[10px] font-medium text-text-light')}>
                               {menu.Label}</span></Link></div>
                           )}
                         <div>
-                      
                     </div></div>
                 </Link>
                  
@@ -147,9 +152,9 @@ const menuItem5 = [
 
           <li>
 
-            <a href="#" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100  group">
+            <a href="#" className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100  group">
                <span className="flex me-3 whitespace-nowrap">You</span>
-               <svg className="w-3 h-3 text-[#0f0f0f] dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
+               <svg className="w-3 h-3 text-[#0f0f0f]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
     <path stroke="#0f0f0f" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"/>
   </svg></a>
        </li>
@@ -225,7 +230,7 @@ const menuItem5 = [
 <ul>
 <li className='border-b-[1px] border-gray-300 my-3'></li>
          <li>
-            <a href="#" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 group">
+            <a href="#" className="flex items-center p-2 text-gray-900 rounded-lg group">
                <span className="flex me-3 font-medium whitespace-nowrap">Subscription</span>
               
             </a>
@@ -259,7 +264,7 @@ const menuItem5 = [
 <ul>
 <li className='border-b-[1px] border-gray-300 my-3'></li>
          <li>
-            <a href="#" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+            <a href="#" className="flex items-center p-2 text-gray-900 rounded-lg  group">
                <span className="flex me-3 font-medium whitespace-nowrap">Explore</span>
               
             </a>
@@ -292,7 +297,7 @@ const menuItem5 = [
         <ul>
 <li className='border-b-[1px] border-gray-300 my-3'></li>
          <li>
-            <a href="#" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+            <a href="#" className="flex items-center p-2 text-gray-900 rounded-lg group">
                <span className="flex me-3 font-medium whitespace-nowrap">More From Youtube</span>             
             </a>
          </li>

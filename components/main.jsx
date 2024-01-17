@@ -115,7 +115,7 @@ export default function Main(props) {
                   <input
                     type="search"
                     id="search-dropdown"
-                    className="block lg:w-[460px] md:w-[100%] sm:w-[100%] max-[630px]:w-[100%] inputS  ps-4 pe-1 py-0 h-10 md:h-10 z-20 text-sm text-gray-900 bg-gray-500  rounded-s-full rounded-e-full  bg-white lg:placeholder-gray-400 sm:placeholder-white max-[630px]:placeholder-white dark:text-white"
+                    className="block lg:w-[460px] md:w-[100%] sm:w-[100%] max-[630px]:w-[100%] inputS  ps-4 pe-1 py-0 h-10 md:h-10 z-20 text-sm text-gray-900 bg-gray-500  rounded-s-full rounded-e-full  bg-white lg:placeholder-gray-400 sm:placeholder-white max-[630px]:placeholder-white"
                     placeholder="Search"
                     required
                   />
@@ -218,7 +218,7 @@ export default function Main(props) {
                 >
                   <div className="px-4 py-3" role="none">
                     <p
-                      className="text-sm text-gray-900 dark:text-white"
+                      className="text-sm text-gray-900"
                       role="none"
                     >
                       Neil Sims

@@ -8,7 +8,7 @@ export default function Video4(props) {
   <source src="https://www.youtube.com/watch?v=SfXaR_AQ0XU" className='w-100 h-[353px] rounded-md' type="video/mp4"/>
 </video>
   <div className="lg:relative md:absolute sm:absolute max-[640px]:absolute lg:bottom-0 sm:bottom-2 max-[640px]:bottom-2 max-[640px]:left-2 sm:left-2 sm:right-1 max-[640px]:right-1">
-            <div className="space-y-0.5  dark:text-white text-left rtl:text-right">
+            <div className="space-y-0.5 text-left rtl:text-right">
                 <div className='flex justify-between group/item'>
               <div>  <h3 className='leading-4 lg:text-[14px] md:text-sm sm:text-sm max-[640px]:text-sm pt-2 pr-6 lg:text-[#0f0f0f] sm:text-[#ffffff] max-[640px]:text-[#ffffff] font-[500]'>{props.head1}</h3>
               </div><div className='me-1.5 group/edit invisible hover:bg-slate-200 group-hover/item:visible'>

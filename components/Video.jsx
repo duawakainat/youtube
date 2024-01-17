@@ -16,7 +16,7 @@ export default function Video(props) {
       </video>
         <div className="flex flex-row">
                   <Image className="rounded-[50%] lg:min-w-[36px] lg:!max-h-[36px] mt-3 mr-3 md:w-10 sm:min-w-[40px] sm:max-h-[40px] max-[630px]:max-h-[40px] max-[630px]:min-w-[40px]" src="/sreejith-kalesh-qTmrnmiEwLQ-unsplash.jpg" width={36} height={36}  alt="profile picture"/>
-                  <div className="space-y-0.5 dark:text-white text-left rtl:text-right mr-6">
+                  <div className="space-y-0.5 text-left rtl:text-right mr-6">
                       <h3 className='leading-4 md:leading-[18px]  lg:text-[16px] md:text-sm sm:text-sm max-[640px]:text-sm mt-3 text-[#0f0f0f] font-medium'>Mix Rahiya Sohniya Madinay Wal Ja Ke | Sahir Ali Bagga | Naat</h3>
                       <div className="text-xs text-[#606060] min-[320px]:text-[#456] font-normal">CTO at Google</div>
                       <div className="text-xs text-[#606060] font-normal">6.6 Views</div>
@@ -27,7 +27,7 @@ export default function Video(props) {
 {/* <iframe className='lg:!min-h-[315px] lg:min-w-[100%] sm:!max-w-[200px] max-[630px]:w-[100%] sm:max-h-[112px] max-[320px]:min-h-[250px]' src="https://www.youtube.com/embed/HZSa6x_fZSs?si=i6jptLnzqGdPCOTl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
   <video className="lg:!min-h-[192px] lg:w-[100%] sm:!min-w-[200px] rounded-[12px] max-[630px]:w-[100%] sm:!max-h-[112px] max-[635px]:max-h-[250px] max-[455px]:max-h-[182px] object-cover" poster={props.imageV}>
         <source src="https://www.youtube.com/watch?v=geDJIcOU7dg" className='w-100' type="video/mp4"/>
-      </video>  <div className="lg:space-y-0.5 lg:pl-0 sm:pl-3 dark:text-white text-left rtl:text-right mr-6">
+      </video>  <div className="lg:space-y-0.5 lg:pl-0 sm:pl-3 text-left rtl:text-right mr-6">
   <div className="lg:block">
                 <h3 className='leading-4 md:leading-[18px]  lg:text-[16px] md:text-sm sm:text-sm max-[640px]:text-sm lg:mt-3 text-[#0f0f0f] font-medium'>Mix Rahiya Sohniya Madinay Wal Ja Ke | Sahir Ali Bagga | Naat</h3>
                 <div className="text-xs text-[#606060] min-[320px]:text-[#456] font-normal">CTO at Google</div>
