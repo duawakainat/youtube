@@ -106,7 +106,7 @@ const Watch1V = (props) => {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowfullscreen
                 ></iframe> */}
-                <video className="!max-h-[90px] !min-w-[160px] max-[630px]:min-w-[160px] max-[630px]:max-h-[90px] mr-4 rounded-lg object-cover" poster={menu.imageV}>
+                <video className="!max-h-[90px] !min-w-[160px] max-[630px]:min-w-[160px] max-[630px]:max-h-[90px] mr-4 rounded-lg max-[600px]:rounded-[12px] object-cover" poster={menu.imageV}>
         <source src="https://www.youtube.com/watch?v=geDJIcOU7dg" className='w-100' type="video/mp4"/>
       </video>
                 <div className="group/item">
