@@ -99,7 +99,6 @@ const SideNav = () => {
     }
   );
   const getNavItemClasess = (menu) => {
-    console.log(router.pathname);
     return classNames(
       "flex items-center cursor-pointer hover:bg-gray-100 rounded-md w-full whitespace-nowrap",
       {

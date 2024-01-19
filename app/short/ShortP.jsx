@@ -59,14 +59,12 @@ const video = [
 ];
 const ShortP = (props) => {
   const [AvtiveImage, setavtiveImage] = useState(0);
-  // console.log(video[index]);
 
   const Next = () => {
     if (AvtiveImage !== video.length - 1) {
       setavtiveImage(AvtiveImage + 1);
       return;
     }
-    console.log(AvtiveImage);
   };
   const Pre = () => {
     if (AvtiveImage !== 0) {

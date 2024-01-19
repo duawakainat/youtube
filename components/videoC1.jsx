@@ -5,7 +5,6 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 const VideoC1 = () => {
   const Pathname = usePathname();
-  console.log(Pathname);
   return (
     <div className="">
       {Pathname !== "/subcription3v" ? (

@@ -1,7 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import Video4 from "@/components/Video4";
+import Video4 from "../../component/Video4";
+
 const YourInfo = (props) => {
   const [Active, setActive] = useState(3);
   const ToggleTab = (index) => {
