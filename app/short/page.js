@@ -2,14 +2,16 @@
 //   title: 'Short Page',
 //   description: 'Short more discription',
 // }
-import React from 'react'
-import ShortP from '@/components/shortP'
+import React from "react";
+import ShortP from "./ShortP";
 const Page = () => {
   return (
     <div>
-    <div className='w-100' style={{width: "100%"}}>  <ShortP/></div>
+      <div className="w-100" style={{ width: "100%" }}>
+        <ShortP />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Page
+export default Page;

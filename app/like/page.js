@@ -1,15 +1,15 @@
 export const metadata = {
-  title: 'Like Page',
-  description: 'Like more discription',
-}
-import React from 'react'
-import LikeP from '@/components/likeP'
+  title: "Like Page",
+  description: "Like more discription",
+};
+import React from "react";
+import LikeP from "./LikeP";
 const Page = () => {
-  return(
+  return (
     <div>
-        <LikeP/>
-        </div>
-  )
-}
+      <LikeP />
+    </div>
+  );
+};
 
-export default Page
+export default Page;

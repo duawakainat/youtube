@@ -108,17 +108,38 @@ const image = [
   },
 ];
 const ImageSub = (props) => {
-  return <div className="lg:hidden md:flex max-[630px]:flex items-center">
-    <div className="flex overflow-hidden">
-   {image.map((menu ,index)=>{
-    return <div key={index}>
-    <Image src={menu.image1} className="max-w-[32px] max-h-[32px] rounded-full m-2" alt='subImage' width={32} height={32}/></div>
-   
-   })}
-  </div>
-  <Link href=''>
-    <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" viewBox="0 0 24 24" {...props}><path fill="currentColor" d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6z"></path></svg></Link>
-  </div>
+  return (
+    <div className="lg:hidden md:flex max-[630px]:flex items-center">
+      <div className="flex overflow-hidden">
+        {image.map((menu, index) => {
+          return (
+            <div key={index}>
+              <Image
+                src={menu.image1}
+                className="max-w-[32px] max-h-[32px] rounded-full m-2"
+                alt="subImage"
+                width={32}
+                height={32}
+              />
+            </div>
+          );
+        })}
+      </div>
+      <Link href="">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-8 h-8"
+          viewBox="0 0 24 24"
+          {...props}
+        >
+          <path
+            fill="currentColor"
+            d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6z"
+          ></path>
+        </svg>
+      </Link>
+    </div>
+  );
 };
 
 export default ImageSub;

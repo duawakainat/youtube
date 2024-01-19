@@ -1,21 +1,18 @@
 "use client";
 import Image from "next/image";
 import "../app/globals.css";
-import Slide from "./Navbar";
-import Video2C from "./video2C";
-import Video2 from "./Video2";
+
 import "../app/globals.css";
 import classNames from "classnames";
-import { useState, useRef, useMemo, useEffect } from "react";
-import Home from "./icon/home";
-import Short from "./icon/short";
+import { useState, useRef,useContext, useMemo, useEffect } from "react";
+import Home from "./icon/Home";
+import Short from "./icon/Short";
 import Link from "next/link";
-import Subcription from "./icon/subcription";
+import Subcription from "./icon/Subcription";
 import { useRouter } from "next/navigation";
-import VideoC1 from "./videoC1";
-import Slide_1 from "./slide";
-import You from "./icon/you";
-import SideNav from "./SideNav";
+import { AppContext } from "@/components/Content";
+import You from "./icon/You";
+
 const menuItem = [
   { id: 1, Label: "Home", icon: Home, link: "/icon/home" },
   { id: 2, Label: "Short", icon: Short, link: "/icon/short" },
@@ -24,7 +21,7 @@ const menuItem = [
 ];
 
 export default function Main(props) {
-  const [toogleCallapse, settoogleCallapse] = useState(false);
+  const { toogleCallapse, settoogleCallapse} = useContext(AppContext);
   const [isCallapse, setIsCallapse] = useState(false);
   const router = useRouter();
   const activeMenu = useMemo(
@@ -104,7 +101,13 @@ export default function Main(props) {
                     style={{ paddingTop: "18px", paddingBottom: "18px" }}
                   >
                     <Image
-                      src="/YouTube_Logo_2017.svg.png" alt="image" className="h-5 w-20 max-[630px]:w-20 max-[630px]:h-5" width={90} height={20} style={{width: 'auto', height: 'auto'}}/>
+                      src="/YouTube_Logo_2017.svg.png"
+                      alt="image"
+                      className="h-5 w-20 max-[630px]:w-20 max-[630px]:h-5"
+                      width={90}
+                      height={20}
+                      style={{ width: "auto", height: "auto" }}
+                    />
                   </div>
                 </div>
               </div>
@@ -145,7 +148,11 @@ export default function Main(props) {
                 >
                   <span className="sr-only">Open user menu</span>
                   <Image
-                    src="/sreejith-kalesh-qTmrnmiEwLQ-unsplash.jpg" alt="user photo" className="lg:w-8 lg:h-8 md:w-8 md:h-8 sm:!w-8 sm:!h-8 max-[640px]:!w-8 max-[640px]:!h-8  rounded-full" width={32} height={32}
+                    src="/sreejith-kalesh-qTmrnmiEwLQ-unsplash.jpg"
+                    alt="user photo"
+                    className="lg:w-8 lg:h-8 md:w-8 md:h-8 sm:!w-8 sm:!h-8 max-[640px]:!w-8 max-[640px]:!h-8  rounded-full"
+                    width={32}
+                    height={32}
                   />
                 </button>
 
@@ -208,7 +215,13 @@ export default function Main(props) {
                     data-dropdown-toggle="dropdown-user"
                   >
                     <span className="sr-only">Open user menu</span>
-                    <Image src="/sreejith-kalesh-qTmrnmiEwLQ-unsplash.jpg" alt="user photo" className="sm:w-8 sm:h-8 max-[640px]:w-8 max-[640px]:h-8  rounded-full" width={32} height={32} style={{width: 'auto', height: 'auto'}}
+                    <Image
+                      src="/sreejith-kalesh-qTmrnmiEwLQ-unsplash.jpg"
+                      alt="user photo"
+                      className="sm:w-8 sm:h-8 max-[640px]:w-8 max-[640px]:h-8  rounded-full"
+                      width={32}
+                      height={32}
+                      style={{ width: "auto", height: "auto" }}
                     />
                   </button>
                 </div>
@@ -217,10 +230,7 @@ export default function Main(props) {
                   id="dropdown-user"
                 >
                   <div className="px-4 py-3" role="none">
-                    <p
-                      className="text-sm text-gray-900"
-                      role="none"
-                    >
+                    <p className="text-sm text-gray-900" role="none">
                       Neil Sims
                     </p>
                     <p

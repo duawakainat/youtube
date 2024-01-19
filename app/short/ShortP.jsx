@@ -5,10 +5,11 @@ import image1 from "@/public/man-isolated-showing-emotions-end-gestures.jpg";
 import image2 from "@/public/handsome-smiling-man-looking-with-disbelief.jpg";
 import image3 from "@/public/close-up-young-successful-man-smiling-camera-standing-casual-outfit-against-blue-background.jpg";
 import HayI from "@/public/peakpx.jpg";
-import Hands from "./icon/Hand";
-import Dishand from "./icon/Dishand";
-import Message from "./icon/Message";
-import Dot from "./icon/Dot";
+import Hands from "@/components/icon/Hand";
+import Dishand from "@/components/icon/Dishand";
+import Message from "@/components/icon/Message";
+import Dot from "@/components/icon/Dot";
+
 import "@/app/globals.css";
 const video = [
   {
